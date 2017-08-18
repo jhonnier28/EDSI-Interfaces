@@ -1,0 +1,14 @@
+template: `<h3>Listado de Estudiantes</h3>
+<table class="table table-striped">
+     <tr>
+         <td>Id</td>
+         <td>Nombre</td>
+         <td>Apellido</td>
+     </tr>
+     <tr *ngFor="let estudiante of listaEstudiantes; let i=index;">
+         <td (click)="seleccionarEstudiante(estudiante)">{{estudiante.id}}</td>
+         <td>{{estudiante.nombre}}</td>
+         <td>{{estudiante.apellido}}</td>
+     </tr>
+</table>
+<materias [materiasEstudiante]="materias"></materias>`
