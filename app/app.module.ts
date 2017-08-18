@@ -9,10 +9,11 @@ import { TemperaturaComponent }  from './temperatura.component';
 import { PaisesComponent }  from './paises.component';
 import { PipesComponent }  from './pipes.component';
 import { HtmlComponent }  from './html.component';
+import { FarenheitPipe } from './farenheitPipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, EstudiantesComponent, MateriasComponent, TemperaturaComponent, PaisesComponent, PipesComponent, HtmlComponent],
+  declarations: [ AppComponent, EstudiantesComponent, MateriasComponent, TemperaturaComponent, PaisesComponent, PipesComponent, HtmlComponent, FarenheitPipe],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

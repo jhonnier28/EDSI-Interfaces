@@ -18,13 +18,14 @@ var temperatura_component_1 = require('./temperatura.component');
 var paises_component_1 = require('./paises.component');
 var pipes_component_1 = require('./pipes.component');
 var html_component_1 = require('./html.component');
+var farenheitPipe_1 = require('./farenheitPipe');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, estudiantes_component_1.EstudiantesComponent, materias_component_1.MateriasComponent, temperatura_component_1.TemperaturaComponent, paises_component_1.PaisesComponent, pipes_component_1.PipesComponent, html_component_1.HtmlComponent],
+            declarations: [app_component_1.AppComponent, estudiantes_component_1.EstudiantesComponent, materias_component_1.MateriasComponent, temperatura_component_1.TemperaturaComponent, paises_component_1.PaisesComponent, pipes_component_1.PipesComponent, html_component_1.HtmlComponent, farenheitPipe_1.FarenheitPipe],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

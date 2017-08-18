@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'mi-aplicacion',
   template:`<h1>Aprende Angular</h1>
-            <html></html>
-            <pipes></pipes>
-            <paises></paises>
+            <!--html></html-->
+            <!--pipes></pipes-->
+            <!--paises></paises-->
+            <temperatura></temperatura>
             `
-
 })
 export class AppComponent { }

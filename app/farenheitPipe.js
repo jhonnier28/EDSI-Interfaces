@@ -9,18 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var TemperaturaComponent = (function () {
-    function TemperaturaComponent() {
-        this.valor = 10;
+var FarenheitPipe = (function () {
+    function FarenheitPipe() {
     }
-    TemperaturaComponent = __decorate([
-        core_1.Component({
-            selector: 'temperatura',
-            template: "<span>La temperatura es: </span>\n                  <span [ngClass]=\"{'btn-danger':valor>30, 'btn-warning':valor<20}\">{{valor}}</span>\n                  <br/>\n                  <span>La temperatura en grados Farenheit es: {{valor | farenheit}}</span>\n                  "
-        }), 
+    FarenheitPipe.prototype.transform = function (valor, args) {
+        return valor * (9 / 5) + 32 + "F";
+    };
+    FarenheitPipe = __decorate([
+        core_1.Pipe({ name: 'farenheit' }), 
         __metadata('design:paramtypes', [])
-    ], TemperaturaComponent);
-    return TemperaturaComponent;
+    ], FarenheitPipe);
+    return FarenheitPipe;
 }());
-exports.TemperaturaComponent = TemperaturaComponent;
-//# sourceMappingURL=temperatura.component.js.map
+exports.FarenheitPipe = FarenheitPipe;
+//# sourceMappingURL=farenheitPipe.js.map
