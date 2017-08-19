@@ -11,12 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var TemperaturaComponent = (function () {
     function TemperaturaComponent() {
-        this.valor = 10;
+        this.valor = 34456;
     }
     TemperaturaComponent = __decorate([
         core_1.Component({
             selector: 'temperatura',
-            template: "<span>La temperatura es: </span>\n                  <span [ngClass]=\"{'btn-danger':valor>30, 'btn-warning':valor<20}\">{{valor}}</span>\n                  <br/>\n                  <span>La temperatura en grados Farenheit es: {{valor | farenheit}}</span>\n                  "
+            template: "<span>La temperatura es: </span>\n                  <span [ngClass]=\"{'btn-danger':valor>30, 'btn-warning':valor<20}\">{{valor}}</span>\n                  <br/>\n                  <span>La temperatura en grados Farenheit es: {{valor | farenheit}}</span>\n                  <br/>\n                  <span>Temperatura invertida: {{valor | numeroInvertido}}</span>\n                  "
         }), 
         __metadata('design:paramtypes', [])
     ], TemperaturaComponent);

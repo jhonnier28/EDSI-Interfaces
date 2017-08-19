@@ -6,11 +6,13 @@ import {Component} from '@angular/core'
                   <span [ngClass]="{'btn-danger':valor>30, 'btn-warning':valor<20}">{{valor}}</span>
                   <br/>
                   <span>La temperatura en grados Farenheit es: {{valor | farenheit}}</span>
+                  <br/>
+                  <span>Temperatura invertida: {{valor | numeroInvertido}}</span>
                   `
 
 })
 
 export class TemperaturaComponent{
-    valor: number =10;
+    valor: number = 34456;
 }
 

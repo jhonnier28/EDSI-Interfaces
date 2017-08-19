@@ -10,10 +10,19 @@ import { PaisesComponent }  from './paises.component';
 import { PipesComponent }  from './pipes.component';
 import { HtmlComponent }  from './html.component';
 import { FarenheitPipe } from './farenheitPipe';
+import { NumeroInvertido } from './numeroInvertido.comoponent';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, EstudiantesComponent, MateriasComponent, TemperaturaComponent, PaisesComponent, PipesComponent, HtmlComponent, FarenheitPipe],
+  declarations: [ AppComponent, 
+                  EstudiantesComponent, 
+                  MateriasComponent, 
+                  TemperaturaComponent, 
+                  PaisesComponent, 
+                  PipesComponent, 
+                  HtmlComponent, 
+                  FarenheitPipe,
+                  NumeroInvertido],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

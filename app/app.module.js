@@ -19,13 +19,22 @@ var paises_component_1 = require('./paises.component');
 var pipes_component_1 = require('./pipes.component');
 var html_component_1 = require('./html.component');
 var farenheitPipe_1 = require('./farenheitPipe');
+var numeroInvertido_comoponent_1 = require('./numeroInvertido.comoponent');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_component_1.AppComponent, estudiantes_component_1.EstudiantesComponent, materias_component_1.MateriasComponent, temperatura_component_1.TemperaturaComponent, paises_component_1.PaisesComponent, pipes_component_1.PipesComponent, html_component_1.HtmlComponent, farenheitPipe_1.FarenheitPipe],
+            declarations: [app_component_1.AppComponent,
+                estudiantes_component_1.EstudiantesComponent,
+                materias_component_1.MateriasComponent,
+                temperatura_component_1.TemperaturaComponent,
+                paises_component_1.PaisesComponent,
+                pipes_component_1.PipesComponent,
+                html_component_1.HtmlComponent,
+                farenheitPipe_1.FarenheitPipe,
+                numeroInvertido_comoponent_1.NumeroInvertido],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
