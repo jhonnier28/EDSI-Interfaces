@@ -1,23 +1,21 @@
 import {Component} from '@angular/core'
 import {Estudiante, Materia} from './estudiantes'
+import {EstudianteService} from './estudiantes.service'
 
 
 @Component({
     selector: 'estudiantes',
-    templateUrl:'./app/estudiantes.component.html'
+    templateUrl:'./app/estudiantes.component.html',
+    providers:[EstudianteService]
     
 })
 export class EstudiantesComponent
 {
     listaEstudiantes: Array<Estudiante>;
     materias: Materia;
-    constructor(){    
-        this.listaEstudiantes = [
-                                    {id: 1, nombre: 'Jaime', apellido: 'Lopez', edad:35, materias: [{ id:1, nombre:'Calculo',semestre:10}]},
-                                    {id: 2, nombre: 'Diana', apellido: 'Muñoz', edad:28, materias: [{ id:2, nombre:'Metematicas',semestre:5}]},
-                                    {id: 3, nombre: 'Jhonnier', apellido: 'Sanchez', edad:33, materias: []}
-                                    
-                                ];
+ 
+    constructor(estudianteService: EstudianteService){    
+        this.listaEstudiantes = estudianteService.obtenerListaEstudiantes();
     }
     seleccionarEstudiante(estudiante)
     {

@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'mi-aplicacion',
   template:`<h1>Aprende Angular</h1>
             <!--html></html-->
-            <!--pipes></pipes-->
+            <estudiantes></estudiantes>
             <!--paises></paises-->
-            <temperatura></temperatura>
+            <!--temperatura></temperatura-->
             `
 })
 export class AppComponent { }

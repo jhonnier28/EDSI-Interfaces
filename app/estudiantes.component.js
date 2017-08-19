@@ -9,13 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var estudiantes_service_1 = require('./estudiantes.service');
 var EstudiantesComponent = (function () {
-    function EstudiantesComponent() {
-        this.listaEstudiantes = [
-            { id: 1, nombre: 'Jaime', apellido: 'Lopez', edad: 35, materias: [{ id: 1, nombre: 'Calculo', semestre: 10 }] },
-            { id: 2, nombre: 'Diana', apellido: 'Muñoz', edad: 28, materias: [{ id: 2, nombre: 'Metematicas', semestre: 5 }] },
-            { id: 3, nombre: 'Jhonnier', apellido: 'Sanchez', edad: 33, materias: [] }
-        ];
+    function EstudiantesComponent(estudianteService) {
+        this.listaEstudiantes = estudianteService.obtenerListaEstudiantes();
     }
     EstudiantesComponent.prototype.seleccionarEstudiante = function (estudiante) {
         this.materias = estudiante.materias;
@@ -23,9 +20,10 @@ var EstudiantesComponent = (function () {
     EstudiantesComponent = __decorate([
         core_1.Component({
             selector: 'estudiantes',
-            templateUrl: './app/estudiantes.component.html'
+            templateUrl: './app/estudiantes.component.html',
+            providers: [estudiantes_service_1.EstudianteService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [estudiantes_service_1.EstudianteService])
     ], EstudiantesComponent);
     return EstudiantesComponent;
 }());
